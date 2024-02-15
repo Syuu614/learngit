@@ -10,7 +10,7 @@ git init #在当前文件夹新建一个空仓库
 
 工作区，暂存区，本地仓库：
 
-![](/Users/zhouyu/Downloads/IMG_3937.PNG)
+![](/Users/zhouyu/Desktop/learngit/assets/IMG_3937.PNG)
 
 文件状态：
 
@@ -19,7 +19,7 @@ git init #在当前文件夹新建一个空仓库
 1. 已修改（Modified）：已修改的文件，但是还没提交到暂存区里的文件。
 1. 已暂存（Staged）：修改后已经添加到暂存区里的文件。
 
-![IMG_3938](/Users/zhouyu/Downloads/IMG_3938.JPG)
+![IMG_3938](/Users/zhouyu/Desktop/learngit/assets/IMG_3938.JPG)
 
 ```bash
 git status#查看仓库的状态
@@ -35,11 +35,11 @@ git commit #提交，该命令只会提交暂存区的文件，不会提交工�
 git commit -m "第一次提交"#-m命令来描述提交细节。
 ```
 
-![IMG_3940](/Users/zhouyu/Downloads/IMG_3940.JPG)
+![IMG_3940](/Users/zhouyu/Desktop/learngit/assets/IMG_3940.JPG)
 
 ## 回退版本
 
-![IMG_3942](/Users/zhouyu/Downloads/IMG_3942.JPG)
+![IMG_3942](/Users/zhouyu/Desktop/learngit/assets/IMG_3942.JPG)
 
 ```bash
 git reset --soft 5af90b8#回退版本的id
@@ -76,11 +76,11 @@ git diff 31862cd fa76031#比较两个版本的差异
 git diff HEAD~2 HEAD file.txt#只查看这两个版本中file.txt的差异
 ```
 
-![IMG_3943](/Users/zhouyu/Downloads/IMG_3943.JPG)
+![IMG_3943](/Users/zhouyu/Desktop/learngit/assets/IMG_3943.JPG)
 
 ## 删除文件
 
-![IMG_3944](/Users/zhouyu/Downloads/IMG_3944.JPG)
+![IMG_3944](/Users/zhouyu/Desktop/learngit/assets/IMG_3944.JPG)
 
 ## .gitignore
 
@@ -94,7 +94,7 @@ echo 123 >> file.txt#>>表示追加
 
 在.gitignore中添加`temp/`表示忽略temp文件夹
 
-![IMG_3947](/Users/zhouyu/Downloads/IMG_3947.JPG)
+![IMG_3947](/Users/zhouyu/Desktop/learngit/assets/IMG_3947.JPG)
 
 ## 远程仓库
 
