@@ -110,7 +110,7 @@ git pull#远程仓库的修改拉取到本地仓库
 **关联远程仓库：**
 
 ```bash
-git remote ad origin git@github.com:Syuu614/learngit.git#关联远程仓库
+git remote add origin git@github.com:Syuu614/learngit.git#关联远程仓库
 git branch -M main#指定分支的名称为main
 git push -u origin main#:main #把本地main分支和远程仓库的main分支关联起来
 ```
@@ -131,6 +131,7 @@ git merge dev#将dev分支合并到main分支
 
 ```bash
 git log --graph --oneline --decorate --all#图形化的分支图
+alias graph="git log --graph --oneline --decorate --all"#定义名为graph的命令
 ```
 
 分支合并之后仍然存在，要手动删除。
@@ -140,3 +141,35 @@ git branch -d dev#删除已经合并的分支，如果是-D就是强制删除。
 ```
 
 ![IMG_3951](./assets/IMG_3951.JPG)
+
+## 冲突
+
+![IMG_3952](./assets/IMG_3952.JPG)
+
+## 回退、恢复和变基
+
+```bash
+git checkout -b dev 244d35#恢复dev分支到ID为244d35的节点
+```
+
+[回退版本](#回退版本)
+
+```bash
+git switch dev#切换到dev分支
+git rebase main#将dev分支的提交变基到main分支上，此时dev分支上的提交会添加在main分支的最新提交之后。
+```
+
+```bash
+git switch main#切换到main分支
+git rebase dev#将main分支的自出现dev分支之后的提交变基到dev分支上，此时main分支的自出现dev分支之后的提交会添加在dev分支的最新提交之后。
+```
+
+![IMG_3953](./assets/IMG_3953.JPG)
+
+![IMG_3954](./assets/IMG_3954.JPG)
+
+## 番外篇：开发规范
+
+![IMG_3955](./assets/IMG_3955.JPG)
+
+![IMG_3956](./assets/IMG_3956.JPG)
