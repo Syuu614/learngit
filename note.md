@@ -126,5 +126,17 @@ git branch#查看所有分支
 git branch dev#创建一个名叫dev的分支
 git checkout dev#切换到dev分支/恢复文件dev(该方法存在歧义：建议使用git switch命令)
 git switch main#切换到main分支
+git merge dev#将dev分支合并到main分支
 ```
 
+```bash
+git log --graph --oneline --decorate --all#图形化的分支图
+```
+
+分支合并之后仍然存在，要手动删除。
+
+```bash
+git branch -d dev#删除已经合并的分支，如果是-D就是强制删除。
+```
+
+![IMG_3951](./assets/IMG_3951.JPG)
