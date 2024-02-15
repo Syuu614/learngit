@@ -107,7 +107,7 @@ git pull#远程仓库的修改拉取到本地仓库
 #                     此处相同可以省略冒号后的内容
 ```
 
-关联远程仓库：
+**关联远程仓库：**
 
 ```bash
 git remote ad origin git@github.com:Syuu614/learngit.git#关联远程仓库
