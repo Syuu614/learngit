@@ -1,5 +1,7 @@
 # Git 学习笔记
 
+学习链接：[一小时掌握Git](https://www.bilibili.com/video/BV1HM411377j/?share_source=copy_web&vd_source=82fa3a30ff60d300c90c56999d163f81)
+
 ## 新建仓库
 
 ```bash
@@ -101,5 +103,19 @@ echo 123 >> file.txt#>>表示追加
 ```bash
 git push#本地修改提交到远程仓库
 git pull#远程仓库的修改拉取到本地仓库
+#git pull <远程仓库名> <远程分支名>:<本地分支名>
+#                     此处相同可以省略冒号后的内容
+```
+
+关联远程仓库：
+
+```bash
+git remote ad origin git@github.com:Syuu614/learngit.git#关联远程仓库
+git branch -M main#指定分支的名称为main
+git push -u origin main#:main #把本地main分支和远程仓库的main分支关联起来
+```
+
+```bash
+git remote -v#查看当前仓库所对应的远程仓库的别名和地址
 ```
 
